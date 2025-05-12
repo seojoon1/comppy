@@ -26,7 +26,7 @@ const message = `안녕하세요 이런식으로
 해요`;
 console.log(message);
 
-const hello = `안녕하세요 제\n 이름은\t \'김서준\' 입니다.`;
+const hello = `안녕하세요 제\n 이름은\t \'김서준\' 입니다.`; // \이스케이프 문자
 console.log(hello);
 /*불리언*/
 const isProgramer = true;
