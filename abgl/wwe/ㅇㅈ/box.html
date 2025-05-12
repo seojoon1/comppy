@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <style>
+      h1,
+      a {
+        /*block level element : 화면 전체를 쓰는 태그*/
+        border: 5px solid gray;
+        padding: 20px; /*padding : 안쪽 여백, margin : 바깥쪽 여백*/
+        margin: 30px;
+        width: 300px; /*width : 가로 길이, height : 세로 길이*/
+        height: 300px; /*width, height 는 px 단위로 설정 가능*/
+        display: block;
+      }
+      /*, 를 통해 압축 가능 border 5px solid blue; 이런식으로 압축 가능능*/
+      a {
+        /*inline element :  자기 자신의 크기만큼 갖는 태그 display 를 통해 변경가능 none 을 통해 안보이게 설정 가능 */
+        border-width: 5px;
+        border-color: red;
+        border-style: solid;
+      }
+      ol {
+        color: black;
+        text-decoration: none;
+        font-size: 30px;
+        border: 1px black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>아비게일</h1>
+    <a href="abi1.html" target="_blank">끔찍한 사고의 유일한 생존자.</a>
+  </body>
+</html>
