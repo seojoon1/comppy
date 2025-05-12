@@ -1,0 +1,6 @@
+git add . //모두 올리기
+git add 경로 //이 경로의 파일 올리기
+git commit -m "쓸 글씨" //커밋 남기기
+git status //뭐 올라갔는지
+git push -u origin main // 깃에 푸쉬하기 깃허브에 올라감
+가나다라마바사 아자차카타파하
