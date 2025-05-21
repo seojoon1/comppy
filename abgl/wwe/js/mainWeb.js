@@ -8,11 +8,10 @@ document.addEventListener(`DOMContentLoaded`, function(){ //DOMContentLoaded = h
             alert('다시 입력 하세요.');
         }
         else{
-            alert(`확인.`);
+            alert('확인.');
         }
     })
-}) 
-
+})
 // dnm.addEventListener(`mousedown`,function(){
 //     alert(`개발중 입니다.`)
 // })
