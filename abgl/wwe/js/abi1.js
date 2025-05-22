@@ -1,5 +1,6 @@
 'use strict';
 let img = document.querySelector(`.abipic`);
+
 // function userNameRead(){
 // }
 img.addEventListener(`click`,function(){

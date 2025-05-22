@@ -1,0 +1,20 @@
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 3px;
+    position: relative;
+};
+
+nav ul li a ::after{
+    content: ''; /* 가상 요소의 내용 */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; /* 초기 너비 0 */
+    height: 2px; /* 밑줄 두께 */
+    background-color: blue; /* 밑줄 색상 */
+    transition: width 0.3s ease-out; /* 너비 변화 애니메이션 */
+};
+nav ul li a:hover::after {
+  width: 100%; /* 마우스 올렸을 때 너비 100% */
+}
