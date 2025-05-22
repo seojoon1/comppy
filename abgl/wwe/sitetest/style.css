@@ -1,20 +1,32 @@
-nav ul li a{
-    text-decoration: none;
-    color: black;
-    padding: 3px;
-    position: relative;
-};
+/* 스킬 제목 (h2) 강조 */
+.skill-title {
+    font-size: 3em; /* 현재보다 훨씬 크게 (예: 24px -> 48px) */
+    font-weight: bold; /* 매우 굵게 */
+    color: #00BCD4; /* 포인트 색상 사용 (예시 색상) */
+    text-align: center;
+    margin-bottom: 20px; /* 제목 아래 여백 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 그림자 효과로 입체감 */
+}
 
-nav ul li a ::after{
-    content: ''; /* 가상 요소의 내용 */
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0; /* 초기 너비 0 */
-    height: 2px; /* 밑줄 두께 */
-    background-color: blue; /* 밑줄 색상 */
-    transition: width 0.3s ease-out; /* 너비 변화 애니메이션 */
-};
-nav ul li a:hover::after {
-  width: 100%; /* 마우스 올렸을 때 너비 100% */
+/* 핵심 수치 강조 */
+.highlight-value {
+    color: #FFD700; /* 황금색 (예시 색상) */
+    font-weight: bold; /* 굵게 */
+    font-size: 1.1em; /* 살짝 크게 */
+}
+
+/* 쿨다운 특별 강조 */
+.cool-down {
+    color: #D32F2F; /* 빨간색 (예시 색상) */
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* 좌측 메뉴 활성화 상태 (sidebar-menu에 해당하는 경우) */
+.sidebar-menu ul li a.active {
+    background-color: #2B2B2B; /* 어두운 배경 */
+    color: #64FFDA; /* 밝은 포인트 색상 */
+    font-weight: bold;
+    border-left: 5px solid #64FFDA; /* 왼쪽에 강조 선 */
+    padding-left: 10px; /* 선과 텍스트 사이 여백 */
 }

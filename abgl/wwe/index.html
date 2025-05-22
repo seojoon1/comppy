@@ -2,41 +2,24 @@
 <html>
     <head>
         <title>메인화면</title>
-        <style>
-            a{ /* a:선택자*/
-                color: black;   /*선언 */
-                text-decoration: none; /* 링크의 밑줄을 없애는 속성, 속성이 끝날 때는 ; 쓸것 */                                                                  
-            }
-            h1 {
-                text-align:center; /* 제목을 왼쪽,가운데,오른쪽 정렬 (left, center, right) */
-                font-size:50px; /* 제목의 크기를 특정px로 설정 */
-                border-bottom:1px solid black;
-                margin-left: 300px;
-                margin-right: 300px;
-                padding: 20px;
-            }
-            ul {
-                color:black;
-                text-decoration: none;
-                text-align: center;
-                font-size:30px;
-            }
-            body{
-                margin:0px;
-            }
-            footer{
-                transform: translateY(1000%);
-            }
-        </style>
+        <link rel="stylesheet" href="css/mainindex.css">
         <script src="js/mainWeb.js" defer></script>
         <!-- <style> 태그는 css를 사용하여 html의 스타일을 설정하는 태그 -->
     </head>
     <body>
-        <h1><a href="https://playeternalreturn.com/main?hl=ko-KR" target="_blank"><img src="img\Eternalreturnlogo.png"> </a></h1>
-        <ul>
-            <h2><a href="abi1.html"
-            style="color:skyblue;"><la>아비게일</la></a></h2> <!--text-decoration:underline; 링크에 밑줄을 다는 속성-->
-            <h2 id="DnM"><a href="DNM.html" style="color:#ffbbbb;"><la>데비</a>&<a href="DNM.html" style="color: #afddff;">마를렌</a></la></h2>
+        <h1><a href="https://playeternalreturn.com/main?hl=ko-KR" target="_blank"><img src="img/Eternalreturnlogo.png"> </a></h1>
+        <ul class="character-menu">
+            <li>
+                <h2><a href="abi1.html" class="character-link abigail">아비게일</a></h2>
+            </li>
+            <li>
+                <h2>
+                    <a href="DNM.html" class="character-link DnM" id="DBnMD">
+                        <span class="d-text" >데비</span>&<span class="m-text">마를렌</span>
+                    </a>
+                </h2>
+            </li>
         </ul>
+            
     </body>
 </html>

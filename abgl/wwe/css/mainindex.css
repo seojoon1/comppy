@@ -1,0 +1,66 @@
+a{ /* a:선택자*/
+    color: black;   /*선언 */
+    text-decoration: none; /* 링크의 밑줄을 없애는 속성, 속성이 끝날 때는 ; 쓸것 */                                                                  
+}
+h1 {
+    text-align:center; /* 제목을 왼쪽,가운데,오른쪽 정렬 (left, center, right) */
+    font-size:50px; /* 제목의 크기를 특정px로 설정 */
+    border-bottom:1px solid black;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-bottom: 20px;
+}
+/* ul {
+    color:black;
+    text-decoration: none;
+    text-align: center;
+    font-size:30px;
+} */
+body{
+    margin:0px;
+}
+/* footer{
+    transform: translateY(1000%);
+    } */
+.character-menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size:30px;
+}
+.character-link.abigail{
+    color: skyblue;
+}
+.character-link.DnM .d-text{
+    color: #ffbbbb;
+}
+.character-link.DnM .m-text{ /*a b 공백이 있으면 자식임*/
+    color: #afddff;
+}
+.character-menu .character-link{
+    padding: 10px 20px;
+    display: inline-block;
+    transition: transform 0.4s  ease-in-out;
+}
+.character-menu .character-link:hover{
+    /* transform: translateX(20px) scale(1.2) rotate(10deg); */
+    animation: jw-anima 1s infinite alternate ease; /*키프레임 명 실행 시간 무한반복 왕복 반복 가속도 함수 방식*/
+}
+@keyframes jw-anima {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(2deg);
+    }
+    50%{
+        transform: rotate(0def);
+    }
+    75%{
+        transform: rotate(-2deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}

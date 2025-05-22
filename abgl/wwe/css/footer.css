@@ -15,10 +15,10 @@ footer {
 footer a{
     color: aliceblue;
     text-decoration: none;
-    transition: color 0.3s ease ,font-size 0.3s ease; /**/
+    transition: color 0.3s ease ,font-size 0.3s ease; /*변화를 줄 때 변화가 일어나는 시간과 변화 유형을 지정*/
 }
 footer a:hover{
-    color: red;
+    color: mediumspringgreen;
     font-size: 20px;
     text-decoration: underline;
 }

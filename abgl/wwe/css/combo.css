@@ -26,6 +26,10 @@ display: grid;
 grid-template-columns: auto auto;
 margin: 0 400px 0 400px;
 }
+#bottom p{
+    margin-left: 25px;
+    line-height: 1.5;
+}
 /* #bottom p{
     color: ;
 } */

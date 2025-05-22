@@ -8,12 +8,35 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <nav> <!--내비게이션 링크를 담는데 사용하는 시맨틱 태그-->
+    <div class="skill-detail-container">
+    <h2 class="skill-title">Q - 바이너리 스핀</h2>
+    <div class="skill-icon-wrapper">
+        <img src="skill_q_icon.png" alt="Q 스킬 아이콘" class="skill-icon">
+    </div>
+    <div class="skill-description">
+        <p>아비게일의 다음 기본 공격이 추가 스킬 피해를 입히고, 대상의 방어력을 4초 동안 감소시킵니다.</p>
+        <p>바이너리 스핀 시전 시, 이동 속도가 0.5초 동안 <span class="highlight-value">12%</span> 증가합니다.</p>
         <ul>
-            <li><a href="page1.html">메뉴 1</a></li>
-            <li><a href="page2.html">메뉴 2</a></li>
-            <li><a href="page3.html">메뉴 3</a></li>
+            <li>첫 번째 회전 피해량: <span class="highlight-value">20/40/60/80/100</span>(+스킬 증폭의 35%)</li>
+            <li>두 번째 회전 피해량: <span class="highlight-value">50/85/120/155/190</span>(+스킬 증폭의 35%)</li>
         </ul>
-    </nav>
+        <p>
+            <span>범위: 원형 반경 3m</span><br>
+            <span>선 딜레이: 0.08초</span><br>
+            <span>스테미나 소모: 30/35/40/45/50</span><br>
+            <span class="cool-down">쿨다운: 12/9/6/5/4초</span>
+        </p>
+    </div>
+    <div class="skill-video-wrapper">
+        <img src="skill_q_gameplay.png" alt="Q 스킬 인게임">
+    </div>
+</div>
+
+<nav class="sidebar-menu">
+    <ul>
+        <li><a href="p-skill.html">1. P</a></li>
+        <li><a href="q-skill.html" class="active">2. Q</a></li> <li><a href="w-skill.html">3. W</a></li>
+        </ul>
+</nav>
 </body>
 </html>
