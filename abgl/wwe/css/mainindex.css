@@ -45,7 +45,7 @@ body{
 }
 .character-menu .character-link:hover{
     /* transform: translateX(20px) scale(1.2) rotate(10deg); */
-    animation: jw-anima 1s infinite alternate ease; /*키프레임 명 실행 시간 무한반복 왕복 반복 가속도 함수 방식*/
+    animation: jw-anima 1s infinite alternate ease-in-out; /*키프레임 명 실행 시간 무한반복 왕복 반복 가속도 함수 방식*/
 }
 @keyframes jw-anima {
     0%{
@@ -55,7 +55,7 @@ body{
         transform: rotate(2deg);
     }
     50%{
-        transform: rotate(0def);
+        transform: rotate(0def); 
     }
     75%{
         transform: rotate(-2deg);
