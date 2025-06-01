@@ -52,4 +52,16 @@ const bye = name => `안녕${name}`;  //리턴도 생략 가능
 const str = bye('서준');
 console.log(str)
 
-//콜백 함수
+//콜백 함수 다시 호출하는 함수
+
+let fruits = ['사과', '바나나', '딸기'];
+// fruits.forEach(function(item, index){
+//     console.log('item:',item)
+// })
+fruits.forEach(printItem);
+function printItem(item, index){
+    console.log('item:',item);
+}
+fruits.forEach((item, index) => {
+    console.log('item:',item)
+})
